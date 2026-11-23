@@ -10,8 +10,19 @@ provider "google" {
   project = "exalted-pattern-424313-j3"
 }
 
+variable "numero_macchine" {
+  description = "Numero di macchine da creare"
+  type        = number
+
+  validation {
+    condition     = var.numero_macchine >= 1
+    error_message = "Il numero di macchine deve essere almeno 1."
+  }
+}
+
 resource "google_compute_instance" "pippo" {
-  name         = "perotti"
+  count        = var.numero_macchine
+  name         = "perotti-${count.index + 1}"
   machine_type = "e2-micro"
   zone         = "us-central1-a"
 
