@@ -1,0 +1,4 @@
+pwd
+terraform -v
+terraform init
+history >> history.log
