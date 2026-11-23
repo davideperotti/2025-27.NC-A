@@ -11,7 +11,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "pippo" {
-  name         = "debian12-vm"
+  name         = "perotti"
   machine_type = "e2-micro"
   zone         = "us-central1-a"
 
