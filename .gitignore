@@ -42,3 +42,4 @@ terraform.rc
 # Optional: ignore plan files saved before destroying Terraform configuration
 # Uncomment the line below if you want to ignore planout files.
 # planout
+exalted-pattern-424313-j3-41106fd4cb4e.json
