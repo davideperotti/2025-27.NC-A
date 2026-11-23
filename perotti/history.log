@@ -1,4 +1,13 @@
 pwd
 terraform -v
 terraform init
-history >> history.log
+history >> history.log    1  export GOOGLE_APPLICATION_CREDENTIALS=/workspaces/2025-27.NC-A/exalted-pattern-424313-j3-41106fd4cb4e.json
+    2  echo GOOGLE_APPLICATION_CREDENTIALS
+    3  echo $GOOGLE_APPLICATION_CREDENTIALS
+    4  cat $GOOGLE_APPLICATION_CREDENTIALS
+    5  cd perotti/
+    6  terraform apply
+    7  terraform fmt
+    8  terraform -v
+    9  terraform init
+   10  history >> history.log
